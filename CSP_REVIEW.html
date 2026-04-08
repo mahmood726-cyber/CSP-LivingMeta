@@ -2302,10 +2302,12 @@
                     tE: 40, tN: 50, cE: 30, cN: 50, group: 'HPCSP vs BVP (LBBB+non-LBBB)',
                     allOutcomes: [
                         { shortLabel: 'Echo Response', title: 'Echocardiographic response (LVEF improvement >5%) at 6 months', tE: 40, cE: 30, type: 'PRIMARY' },
-                        { shortLabel: 'Complications', title: 'Major device-related complications at 6 months', tE: 3, cE: 10, type: 'SECONDARY' }
+                        { shortLabel: 'Complications', title: 'Major device-related complications at 6 months', tE: 3, cE: 10, type: 'SAFETY' },
+                        { shortLabel: 'NYHA Improvement', title: 'NYHA class improvement >=1 at 6 months', tE: 38, cE: 32, type: 'SECONDARY' },
+                        { shortLabel: 'Implant Success', title: 'Successful device implantation', tE: 48, cE: 41, type: 'SECONDARY' }
                     ],
                     rob: ['low', 'low', 'some', 'low', 'low'],
-                    snippet: 'Vijayaraman P et al. JACC Clin Electrophysiol 2023;9:2628-2638. PMID:37715742.',
+                    snippet: 'Source: ClinicalTrials.gov NCT04561778 (HOT-CRT). Enrollment: 100. Status: COMPLETED. Results posted. Primary: LVEF change at 6m. Vijayaraman et al. JACC Clin Electrophysiol 2023;9:2628-2638.',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Vijayaraman P et al. JACC Clin Electrophysiol 2023;9:2628-2638 (PMID:37715742)', text: '100 patients randomized: 50 to HOT-CRT (His-Purkinje conduction system pacing optimized CRT) and 50 to BVP-CRT. Mean age 70, 31% female, mean LVEF 31.5%. If HPCSP provided incomplete resynchronization, a CS lead was added.', highlights: ['100', '50', '50', '31.5%'] },
                         { label: 'Primary Outcome (LVEF Change at 6mo)', source: 'Vijayaraman P et al. JACC Clin Electrophysiol 2023;9:2628-2638', text: 'Change in LVEF at 6 months was significantly greater in HOT-CRT: +12.4% +/- 7.3% vs +8.0% +/- 10.1% in BVP (P=0.02). Echocardiographic response (LVEF improvement >5%): 80% HOT-CRT vs 61% BVP (P=0.06). QRS narrowed from 164 to 137ms (HOT-CRT) vs 166 to 141ms (BVP).', highlights: ['12.4%', '8.0%', 'P=0.02', '80%', '61%'] },
@@ -2319,10 +2321,12 @@
                     publishedHR: 2.35, hrLCI: 0.99, hrUCI: 5.61,
                     allOutcomes: [
                         { shortLabel: 'Hierarchical Composite', title: 'Death, HF hosp, urgent HF visit, LVEF change at 12 months (hierarchical)', tE: 20, cE: 9, type: 'PRIMARY', pubHR: 2.35, pubHR_LCI: 0.99, pubHR_UCI: 5.61 },
-                        { shortLabel: 'LVEF Change', title: 'LVEF at 12 months (CSP 35% vs BiVP 39%)', tE: 0, cE: 0, type: 'SECONDARY' }
+                        { shortLabel: 'LVEF Change', title: 'LVEF at 12 months (CSP 35% vs BiVP 39%)', tE: 0, cE: 0, type: 'SECONDARY' },
+                        { shortLabel: 'NYHA Improvement', title: 'NYHA class improvement >=1 at 12 months', tE: 0, cE: 0, type: 'SECONDARY' },
+                        { shortLabel: 'Complications', title: 'Major device/procedure-related complications at 12 months', tE: 0, cE: 0, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Zimerman A et al. JAMA Cardiol 2026. PMID:41811324. CSP INFERIOR to BiVP (OR 2.36, P=0.002). N=173.',
+                    snippet: 'Source: ClinicalTrials.gov NCT05572736 (PhysioSync-HF). Enrollment: 179. Status: COMPLETED. No CT.gov results posted. CSP INFERIOR to BiVP (OR 2.36, P=0.002). Zimerman et al. JAMA Cardiol 2026.',
                     evidence: [
                         { label: 'Enrollment & Randomization', source: 'Zimerman A et al. JAMA Cardiol 2026 (PMID:41811324, DOI:10.1001/jamacardio.2026.0101)', text: '173 patients (median age 62, 49.7% female, 66.5% dilated cardiomyopathy, median LVEF 26%, median QRS 180ms) randomized 1:1 to CSP (preferentially LBBAP) vs BiVP across 14 Brazilian hospitals. 12-month follow-up.', highlights: ['173', '1:1', '26%', '180ms', '14 hospitals'] },
                         { label: 'Primary Outcome (CSP INFERIOR)', source: 'Zimerman A et al. JAMA Cardiol 2026', text: 'CSP failed to meet noninferiority and was INFERIOR to BiVP for the hierarchical composite (OR 2.36, 95% CI 1.37-4.06, P=0.99 for non-inferiority, P=0.002 for difference). Time-to-event composite (death/HF hosp/urgent HF visit): HR 2.35 (95% CI 0.99-5.61). LVEF improved to 35% (CSP) vs 39% (BiVP), mean diff 3.8% favoring BiVP.', highlights: ['INFERIOR', 'OR 2.36', 'P=0.002', '35%', '39%'] },
