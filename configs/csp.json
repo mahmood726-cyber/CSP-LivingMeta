@@ -3,6 +3,6 @@
   "drug_lower": "csp",
   "condition": "Adults with CRT indication LBBB EF 35",
   "slug": "csp",
-  "source_repo": "C:\\Projects\\CSP-LivingMeta",
+  "source_repo": ".",
   "source_html": "CSP_REVIEW.html"
 }
